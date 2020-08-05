@@ -1,0 +1,24 @@
+<div class="example-wrapper">
+  <div style="margin-bottom: 5px;">
+    <p>test</p>
+  </div>
+  <ag-grid-angular
+      #agGrid
+      style="width: 50%; height: 1000px;"
+      id="myGrid"
+      class="ag-theme-alpine"
+      [modules]="modules"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [autoGroupColumnDef]="autoGroupColumnDef"
+      [treeData]="true"
+      [components]="components"
+      [animateRows]="true"
+      [groupDefaultExpanded]="groupDefaultExpanded"
+      [getDataPath]="getDataPath"
+      [getRowNodeId]="getRowNodeId"
+      (gridReady)="onGridReady($event)"
+      >
+  </ag-grid-angular>
+</div>
